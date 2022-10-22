@@ -168,7 +168,7 @@ class _RegisterPageState extends State<RegisterPage> {
               ),
             ),
             InkWell(
-              onTap: (){Navigator.pushReplacement(context, MaterialPageRoute(builder:(context)=> LoginPage()));},
+              onTap: (){Navigator.push(context, MaterialPageRoute(builder:(context)=> LoginPage()));},
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
