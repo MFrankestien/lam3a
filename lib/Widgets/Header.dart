@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
-  const Header({Key? key}) : super(key: key);
+ String ? text , subText;
+ bool haslabel = false;
+
+ Header({required this.text,this.subText,required this.haslabel});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +13,7 @@ class Header extends StatelessWidget {
       children: [
         Image.asset('assets/images/Vector.png'),
         Text(
-          'تسجيل الدخول',
+          '$text',
           style: TextStyle(
               color: Color(0xff0b3fa8),
               fontSize: 35,
@@ -19,8 +22,8 @@ class Header extends StatelessWidget {
         ),
         Positioned(
           top: 140,
-          child: Text(
-            'مرحبا بك مجددا !',
+          child: haslabel==false?Container() :Text(
+            '$subText',
             style: TextStyle(
                 color: Color(0xff0b3fa8),
                 fontSize: 20,

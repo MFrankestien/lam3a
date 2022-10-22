@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:lam3a/Const.dart';
+import 'package:lam3a/Constant/Const.dart';
 
 class CustomTextField extends StatelessWidget {
   String? lable;
   double cwidth;
   bool ? isobsecure =false;
+  bool? haslabel =false;
+
   TextInputType keyboardType;
   TextEditingController tcontroller;
 
@@ -13,6 +15,7 @@ class CustomTextField extends StatelessWidget {
 
 
   CustomTextField({
+    this.haslabel,
     required this.keyboardType,
     required this.tcontroller,
     required this.validator,
@@ -27,7 +30,7 @@ class CustomTextField extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        Text('$lable ',
+       haslabel ==null? Container():Text('$lable ',
             style: TextStyle(
                 color: ButtonColor,
                 fontSize: 15,
