@@ -42,6 +42,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
                     children: [
                       CustomTextField(
+                        haslabel: true,
                         isobsecure: false,
                         onSubbmit: (value){
                           namecontroller.text =value;
@@ -59,6 +60,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         height: 10,
                       ),
                       CustomTextField(
+                        haslabel: true,
                         isobsecure: false,
                         onSubbmit: (value){
                           emailcontroller.text =value;
@@ -76,6 +78,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         height: 10,
                       ),
                       CustomTextField(
+                        haslabel: true,
                         isobsecure: false,
                         onSubbmit: (value){
                           phonecontroller.text =value;
@@ -117,6 +120,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),)
                         ],),),
                       CustomTextField(
+                        haslabel: true,
                         onSubbmit: (value){
                           passcontroller.text=value;
                         },
@@ -135,6 +139,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         height: 10,
                       ),
                       CustomTextField(
+                        haslabel: true,
                         onSubbmit: (value){
                           repasscontroller.text=value;
                         },

@@ -36,6 +36,7 @@ class _LoginPageState extends State<LoginPage> {
                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         CustomTextField(
+                          haslabel: true,
                           isobsecure: false,
                           onSubbmit: (value){
                             emailcontroller.text =value;
@@ -53,6 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                           height: 25,
                         ),
                         CustomTextField(
+                          haslabel: true,
                           onSubbmit: (value){
                             passcontroller.text=value;
                           },
