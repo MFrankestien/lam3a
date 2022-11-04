@@ -27,7 +27,9 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
             children: [
-              Header(text: 'تسجيل الدخول',subText: 'مرحبا بك مجددا !',haslabel: true,),
+              Header(
+                screens: false,
+                text: 'تسجيل الدخول',subText: 'مرحبا بك مجددا !',haslabel: true,),
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Form(

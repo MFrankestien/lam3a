@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lam3a/Screens/OTPPage.dart';
 
+import 'Screens/Home/HomeScreen.dart';
 import 'Screens/LoginPage.dart';
 import 'Screens/RegisterPage.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: LoginPage()
+      home: HomeScreen()
     );
   }
 }

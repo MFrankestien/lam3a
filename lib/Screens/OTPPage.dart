@@ -26,7 +26,9 @@ class OTPPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
 
             children: [
-              Header(text: 'رمز التأكيد',haslabel: false,),
+              Header(
+                screens: false,
+                text: 'رمز التأكيد',haslabel: false,),
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Form(

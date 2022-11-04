@@ -35,6 +35,7 @@ class _RegisterPageState extends State<RegisterPage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Header(
+              screens: false,
               text: "تسجيل جديد",
               haslabel: false,
             ),
