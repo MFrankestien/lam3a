@@ -60,14 +60,17 @@ class Profile extends StatelessWidget {
             itemBuilder: (contxt,index){
               return Padding(
                 padding: const EdgeInsets.all(12.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
+                child: InkWell(
+                  onTap: (){},
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
 
-                  Text("${profile[index]}",style: TextStyle(fontFamily: 'Cairo',color: Colors.grey,fontSize: 25),),
-                    Icon(picon[index],color: Colors.grey,size: 40,),
+                    Text("${profile[index]}",style: TextStyle(fontFamily: 'Cairo',color: Colors.grey,fontSize: 25),),
+                      Icon(picon[index],color: Colors.grey,size: 40,),
 
-                  ],),
+                    ],),
+                ),
               );
             },
             separatorBuilder: (index, con) {
