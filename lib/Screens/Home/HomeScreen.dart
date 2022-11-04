@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lam3a/Constant/Const.dart';
 import 'package:lam3a/Widgets/Header.dart';
+import 'package:lam3a/data.dart';
 
 class HomeScreen extends StatefulWidget {
 
@@ -15,15 +16,20 @@ int currentindex =3;
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
+        alignment: AlignmentDirectional.center,
         children: [
-        Header(
-          screens: true,
-            text: "jj", haslabel: false),
+        Positioned(
+          top: 0,
+          bottom: 0,
+
+          child: Header(
+            screens: true,
+            text: "${headers[currentindex]}", haslabel: false,),),
           Positioned.fill(
+            top: 110,
 
-              child: Column(children: [
+              child: pages[currentindex]),
 
-              ],))
 
 
       ],),

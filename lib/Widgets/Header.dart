@@ -10,12 +10,12 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: screens ==false ?AlignmentDirectional.center : AlignmentDirectional.topStart,
+      alignment: screens ==false ?AlignmentDirectional.center : AlignmentDirectional.topEnd,
       children: [
         Image.asset('assets/images/Vector.png'),
 
         Padding(
-          padding:screens==false? const EdgeInsets.all(0):const EdgeInsets.only(top: 40,right: 20,left: 20,),
+          padding:screens==false? const EdgeInsets.all(0):const EdgeInsets.only(top: 50,right: 30,left: 30,),
           child: Text(
             '$text',
             style: TextStyle(
