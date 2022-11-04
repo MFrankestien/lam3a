@@ -74,7 +74,7 @@ class Profile extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.only(left:20,right:20 ),
                 child: Container(
-                  height: 2,
+                  height: 1.5,
                   width: double.infinity,
                   color: Colors.grey,
                 ),
