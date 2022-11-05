@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lam3a/Screens/Cars.dart';
 import 'package:lam3a/Screens/Home.dart';
-import 'package:lam3a/Screens/Profile.dart';
+import 'package:lam3a/Screens/Profile/Profile.dart';
 import 'package:lam3a/Screens/Reservation.dart';
 
 List headers=[

@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:lam3a/Widgets/CustomlistviewOption.dart';
 import 'package:lam3a/data.dart';
 
 class Profile extends StatelessWidget {
   const Profile({Key? key}) : super(key: key);
 
+
+
   @override
   Widget build(BuildContext context) {
+    List profilenav=[
+      Navigator.push(context,MaterialPageRoute(builder:(context)=>)),
+      Reservation(),
+      Cars(),
+      Home(),
+    ];
     return SingleChildScrollView(
-
       child: Column(
         children: [
           Container(
@@ -58,30 +66,20 @@ class Profile extends StatelessWidget {
             ]),
           ),
           ListView.separated(
-            scrollDirection: Axis.vertical,
+              scrollDirection: Axis.vertical,
               physics: NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
-              itemBuilder: (contxt,index){
-                return Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: InkWell(
-                    onTap: (){
-                      print("${profile[index]} is clicked");
-                    },
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-
-                      Text("f}",style: TextStyle(fontFamily: 'Cairo',color: Colors.grey,fontSize: 25),),
-                        Icon(Icons.account_balance_wallet_outlined,color: Colors.grey,size: 40,),
-
-                      ],),
-                  ),
+              shrinkWrap: true,
+              itemBuilder: (contxt, index) {
+                return CustomListviewOption(
+                  icon: picon[index],
+                  lable: profile[index],
+                  lenth: picon.length,
+                  ontap: () {},
                 );
               },
               separatorBuilder: (index, con) {
                 return Padding(
-                  padding: const EdgeInsets.only(left:20,right:20 ),
+                  padding: const EdgeInsets.only(left: 20, right: 20),
                   child: Container(
                     height: 1.5,
                     width: double.infinity,
@@ -89,7 +87,7 @@ class Profile extends StatelessWidget {
                   ),
                 );
               },
-              itemCount: 20)
+              itemCount: picon.length)
         ],
       ),
     );
