@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:lam3a/Screens/Profile/Walet.dart';
 import 'package:lam3a/Widgets/CustomlistviewOption.dart';
 import 'package:lam3a/data.dart';
 
@@ -10,12 +11,7 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List profilenav=[
-      Navigator.push(context,MaterialPageRoute(builder:(context)=>)),
-      Reservation(),
-      Cars(),
-      Home(),
-    ];
+
     return SingleChildScrollView(
       child: Column(
         children: [
@@ -74,7 +70,18 @@ class Profile extends StatelessWidget {
                   icon: picon[index],
                   lable: profile[index],
                   lenth: picon.length,
-                  ontap: () {},
+                  ontap:(){
+                    if(index==0){
+                      Navigator.push(context,MaterialPageRoute(builder:(context)=>Walet()));
+                    }else if(index==1){
+                      Navigator.push(context,MaterialPageRoute(builder:(context)=>Walet()));
+                    }else if(index==2){
+                      Navigator.push(context,MaterialPageRoute(builder:(context)=>Walet()));
+                    }else if(index==3){
+                      Navigator.push(context,MaterialPageRoute(builder:(context)=>Walet()));
+                    }
+
+                  },
                 );
               },
               separatorBuilder: (index, con) {
