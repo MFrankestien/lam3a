@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:lam3a/Screens/Profile/Settings/Settings.dart';
 import 'package:lam3a/Screens/Profile/Walet.dart';
 import 'package:lam3a/Widgets/CustomlistviewOption.dart';
 import 'package:lam3a/data.dart';
@@ -74,7 +75,7 @@ class Profile extends StatelessWidget {
                     if(index==0){
                       Navigator.push(context,MaterialPageRoute(builder:(context)=>Walet()));
                     }else if(index==1){
-                      Navigator.push(context,MaterialPageRoute(builder:(context)=>Walet()));
+                      Navigator.push(context,MaterialPageRoute(builder:(context)=>Settings()));
                     }else if(index==2){
                       Navigator.push(context,MaterialPageRoute(builder:(context)=>Walet()));
                     }else if(index==3){

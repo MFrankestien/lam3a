@@ -30,3 +30,14 @@ List pages=[
   Cars(),
   Home(),
 ];
+
+List settingList=[
+  'الاشعارات ',
+  'الخصوصيه والامان ',
+  'الشروط و الاحكام ',
+];
+List settingIcons=[
+  Icons.add_alert_sharp,
+  Icons.security_outlined  ,
+  Icons.rule_rounded,
+];

@@ -26,8 +26,8 @@ class Header extends StatelessWidget {
               ? const EdgeInsets.all(0)
               : const EdgeInsets.only(
                   top: 50,
-                  right: 30,
-                  left: 30,
+                  right: 25,
+                  left: 25,
                 ),
           child: icon == false
               ? Text(
