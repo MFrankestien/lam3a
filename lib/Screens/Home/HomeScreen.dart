@@ -23,6 +23,7 @@ int currentindex =3;
           bottom: 0,
 
           child: Header(
+            icon: false,
             screens: true,
             text: "${headers[currentindex]}", haslabel: false,),),
           Positioned.fill(

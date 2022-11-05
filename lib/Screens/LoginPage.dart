@@ -28,6 +28,7 @@ class _LoginPageState extends State<LoginPage> {
 
             children: [
               Header(
+                icon: false,
                 screens: false,
                 text: 'تسجيل الدخول',subText: 'مرحبا بك مجددا !',haslabel: true,),
               Padding(

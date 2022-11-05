@@ -27,6 +27,7 @@ class OTPPage extends StatelessWidget {
 
             children: [
               Header(
+                icon: false,
                 screens: false,
                 text: 'رمز التأكيد',haslabel: false,),
               Padding(
